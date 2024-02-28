@@ -14,7 +14,7 @@ function newQuote() {
   if (!quote.author || quote.author === "type.fit") {
     authorText.textContent = "Unknown";
   } else {
-    authorText.textContent = quote.author;
+    authorText.textContent = quote.author.replace(/, type\.fit$/, "");
   }
 
   //Check the quote length
